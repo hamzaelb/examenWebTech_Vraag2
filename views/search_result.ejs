@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Recepten</title>
+</head>
+<body>
+  <h2>Result</h2>
+  <br/><br/>
+  <ul>
+    <%for (var recept in recepten){%>   
+      <li><%=recepten[recept].naam%><br>Caloriën: <%=recepten[recept].caloriën%> <br/> Ingrediënten: <%=recepten[recept].ingrediënten%> <br/> Benodigde tijd: <%=recepten[recept].benodigde_tijd%></li>
+      <%}%>
+    </ul>
+
+</body>
+</html>
